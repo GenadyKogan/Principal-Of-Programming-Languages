@@ -55,7 +55,7 @@ def boring(x):
             x=y
         why(5)
         return x
-#boring(4)
+print(boring(4))
 
 # ------------------------------------------------
 #                       Q7
@@ -63,14 +63,12 @@ def boring(x):
 x=3
 def interesting(x):
         def because(y):
-            def fn(y):
                 nonlocal x
                 x=y
-            fn(y+4)
         because(5)
         return x
-print(interesting(4))
-print(x)
+#print(interesting(4))
+#print(x)
 
 # ------------------------------------------------
 #                       Q8
@@ -133,7 +131,7 @@ def func1(x):
     def funcC(y):
         return (y+x/y)/2.0
     return funcB(1.0)
-func1(4)
+#func1(4)
 # ------------------------------------------------
 #                       Q13
 # ------------------------------------------------
