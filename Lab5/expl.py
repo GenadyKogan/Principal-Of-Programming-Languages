@@ -1,4 +1,6 @@
 #               lambda
+from filecmp import cmp
+
 
 def foo(x): return x**2
 #print(foo(4))
@@ -13,12 +15,13 @@ g=lambda x,y,z:(x+z)/y
 
 #print((lambda :1)())
 
-def make_incrementor(n):return lambda z,x:x+n+z
+def make_incrementor(n):return lambda x: x+n
 #f=make_incrementor(2)(3,3)
 #print(f)
-f=make_incrementor(2)
-g=make_incrementor(6)
+#f=make_incrementor(2)
+#g=make_incrementor(6)
 #print(f(42),g(42))
+#print(make_incrementor(2)(42))
 
 #print((lambda x,y:x or y)(7%2==1,8>0))
 #print((lambda x,y:x and y)(7%2==1,8>0))
@@ -40,12 +43,17 @@ len(list): It gives the total length of the list.
 list(seq): Converts a tuple into a list.
 cmp(list1, list2): It compares elements of both lists list1 and list2
 """
+temp=[1,1,1,1]
 myList = [1,5,4,3,2]
-myList.sort()
+
+
+#myList.sort()
 #print(myList)
 
 myList.append(22)
 #print(myList)
+
+
 
 myList.extend([6,7,8,9])
 #print(myList)
@@ -58,7 +66,7 @@ myTuple=(1,2,3,4)
     #print(x,end='')
 #print(len(myList))
 
-#for x in range(9,-1,-1):
+#for x in range(len(myList)-1,-1,-1):
     #print(myList[x])
 
 #for x in range(len(myList)):
@@ -85,8 +93,8 @@ def fun(variable):
     letters = ['a', 'e', 'i', 'o', 'u', 's']
     if (variable in letters):
         return True
-    else:
-        return False
+    
+    return False
 
 
 # sequence
@@ -139,4 +147,4 @@ def power2(n):
 
 f=power1(3)
 g=power2(3)
-print(f(2),g(2))
+#print(f(2),g(2))

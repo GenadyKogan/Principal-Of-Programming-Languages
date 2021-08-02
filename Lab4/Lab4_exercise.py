@@ -35,7 +35,7 @@ def g(u):
     def f(i):
             return u+i
     return f(10)
-#g(20)
+print(g(20))
 
 # ------------------------------------------------
 #                       Q5
@@ -62,6 +62,7 @@ print(boring(4))
 # ------------------------------------------------
 x=3
 def interesting(x):
+
         def because(y):
                 nonlocal x
                 x=y
