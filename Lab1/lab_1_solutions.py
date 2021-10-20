@@ -1,3 +1,6 @@
+
+#t  est
+
 #1
 tempC = int(input("Input the temperature in Celsius: "))
 tempF = (9.0/5.0) * tempC + 32.0
