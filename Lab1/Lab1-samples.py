@@ -65,9 +65,20 @@ else:
 #
 
 """
+#========================================================
 # input number
 n = int(input('Enter number[1-9]: '))
 print()
+
+# Reads two numbers from input and typecasts them to int using 
+# list comprehension
+x, y = [int(x) for x in input().split()]  
+
+# Reads two numbers from input and typecasts them to int using 
+# map function
+x, y = map(int, input().split())
+
+#========================================================
 
 # range(n) from 0 to n-1, step 1
 for i in range(n):
