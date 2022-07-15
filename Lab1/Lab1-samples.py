@@ -74,6 +74,13 @@ print()
 # list comprehension
 x, y = [int(x) for x in input().split()]  
 
+# list comprehension example
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+
 # Reads two numbers from input and typecasts them to int using 
 # map function
 x, y = map(int, input().split())
