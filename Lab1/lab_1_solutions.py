@@ -51,4 +51,7 @@ while b!=0:
 print('gcd of {0} and {1} = {2}'.format(a_old,b_old,a))
 
 
+
+
+
  

@@ -126,7 +126,7 @@ while i <= n:
 """
 
 # =================================================================
-
+"""
 x=1
 print('foramt is {0}, id = {1}, and {other}.'.format(type(x), id(x), other ='lab1'))
 
@@ -135,12 +135,12 @@ print('x id = {0}, y id = {1}.'.format(id(x), id(y)))
 
 print('x id = {0}, y id = {1}.'.format(id(x), id(y)))
 
-
+"""
 
 
 # ==================== Code to swap 'x' and 'y' ====================
 # ==================== 1 ====================
-
+"""
 x = 10
 y = 5
 
@@ -153,9 +153,9 @@ y = x - y
 # x becomes 5
 x = x - y
 print("After Swapping: x =", x, " y =", y)
-
+"""
 # ==================== 2 ====================
-
+"""
 x = 10
 y = 5
  
@@ -172,8 +172,9 @@ y = x // y
 x = x // y
  
 print("After Swapping: x =",x, " y =", y)
-
+"""
 # ==================== 3 ====================
+"""
 x = 10
 y = 5
  
@@ -183,9 +184,9 @@ y = x ^ y; # y becomes 10 (1010)
 x = x ^ y; # x becomes 5 (0101)
  
 print ("After Swapping: x = ", x, " y =", y)
-
+"""
 # ==================== 4 ====================
-
+"""
 def swap(xp, yp):
  
     xp[0] = xp[0] ^ yp[0]
@@ -197,9 +198,9 @@ def swap(xp, yp):
 x = [10]
 swap(x, x)
 print("After swap(&x, &x): x = ", x[0])
-
+"""
 # ==================== 5 ====================
-
+"""
 def swap(xp, yp):
  
     # Check if the two addresses are same
@@ -214,10 +215,10 @@ def swap(xp, yp):
 x = [10]
 swap(x, x)
 print("After swap(&x, &x): x = ", x[0])
-
+"""
 
 # ==================== 6 ====================
- 
+"""
 def swap(a, b):
  
     # Same as a = a + b
@@ -238,9 +239,9 @@ b = 10
  
 # Function call
 swap(a, b)
-
+"""
 # ==================== 7 ====================
-
+"""
 def swap(x, y):
   x , y = y, x
   print("After Swapping: x = ", x, ", y = ", y)
@@ -251,9 +252,9 @@ y = 5
   
 # Function call
 swap(x, y)
-
+"""
 # =============================================================
-
+"""
 a=b=c=5
 print(a,b,c)
 
@@ -265,9 +266,9 @@ from math import pi
 print(pi)
 
 print(int("10"))
-
+"""
 # format ========================================================
-
+"""
 a,b,c = 2, 3.14159265359, 'abcd!@#$'
 
 print('a={0}, b={1}, c={2} next'.format(a,b,c),'b={0:.2f} end'.format(b))
@@ -282,8 +283,9 @@ print(tuple(range(4)))
 print(range(4))
 print(tuple(range(3,8)))
 print(tuple(range(8,3,-2)))
-
+"""
 # loop ============================================================
+"""
 for x in range(1,8):
 	print(x)
 for x in range(1,8):
@@ -303,9 +305,9 @@ print("\n ")
 ACCEPTED_EXTENSIONS     = ('jpg', 'jpeg', 'tif', 'tiff', 'png') 
 
 print(ACCEPTED_EXTENSIONS[0])
-
+"""
 # lambda ============================================================
-
+"""
 def foo(x):
     def foo2(y):
         y+=10
@@ -329,4 +331,28 @@ def foo3(foo):
     return foo(foo(5))
 
 print("foo3", foo3(foo))
+"""
+# lambda/global ============================================================
 
+print("global")
+x=3
+def interesting(x):
+
+        def because(y):
+                global x
+                x=y
+        because(5)
+        return x
+print(interesting(5))
+print(x)
+print("nonlocal")
+x=3
+def interesting(x):
+
+        def because(y):
+                nonlocal x
+                x=y
+        because(5)
+        return x
+print(interesting(5))
+print(x)
