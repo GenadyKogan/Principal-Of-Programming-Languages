@@ -42,3 +42,15 @@ def f2(y):
 print(f1(20))   # => NameError: name 'x' is not defined
 '''
 # ------------------------------------------------
+def foo(x,b=None):
+
+    return x
+
+print(foo(5))
+# ------------------------------------------------
+
+
+def func(x,y):
+    return y
+
+print(func(5))
