@@ -65,9 +65,27 @@ else:
 #
 
 """
+#========================================================
 # input number
 n = int(input('Enter number[1-9]: '))
 print()
+
+# Reads two numbers from input and typecasts them to int using 
+# list comprehension
+x, y = [int(x) for x in input().split()]  
+
+# list comprehension example
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+
+# Reads two numbers from input and typecasts them to int using 
+# map function
+x, y = map(int, input().split())
+
+#========================================================
 
 # range(n) from 0 to n-1, step 1
 for i in range(n):
@@ -265,7 +283,7 @@ print(range(4))
 print(tuple(range(3,8)))
 print(tuple(range(8,3,-2)))
 
-# loop =====++=====================================================
+# loop ============================================================
 for x in range(1,8):
 	print(x)
 for x in range(1,8):
@@ -285,3 +303,30 @@ print("\n ")
 ACCEPTED_EXTENSIONS     = ('jpg', 'jpeg', 'tif', 'tiff', 'png') 
 
 print(ACCEPTED_EXTENSIONS[0])
+
+# lambda ============================================================
+
+def foo(x):
+    def foo2(y):
+        y+=10
+        return y/2
+    return foo2(x)
+
+
+
+
+res = lambda x: x
+
+print(type(res))
+print("lambda", res(foo(5)))
+
+print("foo", foo(5))
+
+print("(lambda x: foo(x))(foo(5))", (lambda x: foo(x))(foo(5)))
+
+def foo3(foo):
+
+    return foo(foo(5))
+
+print("foo3", foo3(foo))
+
