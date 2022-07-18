@@ -333,6 +333,7 @@ def foo3(foo):
 print("foo3", foo3(foo))
 """
 # lambda/global ============================================================
+"""
 
 print("global")
 x=3
@@ -356,3 +357,10 @@ def interesting(x):
         return x
 print(interesting(5))
 print(x)
+"""
+
+res = lambda x: x
+
+print(res(5))
+
+print(locals())
