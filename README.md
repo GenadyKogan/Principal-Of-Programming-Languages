@@ -15,3 +15,8 @@ Documentation: https://docs.python.org/3/index.html
 ```.\env\Scripts\activate```<br />
 4. For leaving the virtual environment type the following given command and press enter button as shown below:
   ```deactivate```
+### Data structure
+1. <a href="https://www.geeksforgeeks.org/list-methods-python/" target="_blank">List</a><br />
+2. <a href="https://www.geeksforgeeks.org/python-dictionary-methods/?ref=lbp" target="_blank">Dictionary</a><br />
+3. <a href="https://www.geeksforgeeks.org/python-tuples/" target="_blank">Tuples</a><br />
+4. <a href="https://www.geeksforgeeks.org/python-set-methods/">Set</a><br />
