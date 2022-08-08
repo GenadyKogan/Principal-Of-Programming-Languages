@@ -20,3 +20,7 @@ Documentation: https://docs.python.org/3/index.html
 2. <a href="https://www.geeksforgeeks.org/python-dictionary-methods/?ref=lbp" target="_blank">Dictionary</a><br />
 3. <a href="https://www.geeksforgeeks.org/python-tuples/" target="_blank">Tuples</a><br />
 4. <a href="https://www.geeksforgeeks.org/python-set-methods/">Set</a><br />
+
+### Abstract Data Types
+
+<a href="https://www.geeksforgeeks.org/abstract-data-types/" target="_blank">ADT</a><br />
