@@ -438,10 +438,10 @@ class Child(Parent):
   
 # Driver's code
 obj = Child()
-obj.display()
+#obj.display()
   
 # Calling Parent class
-obj.show()
+#obj.show()
 
 # Python program to demonstrate
 # calling the parent's class method
@@ -462,7 +462,7 @@ class Child(Parent):
 		
 # Driver's code
 obj = Child()
-obj.show()
+#obj.show()
 
 
 # Python program to demonstrate
@@ -485,7 +485,7 @@ class Child(Parent):
           
 # Driver's code
 obj = Child()
-obj.show()
+#obj.show()
 
 
 # Program to define the use of super() 
@@ -519,11 +519,37 @@ class GFG3(GFG2):
     
     
 # main function 
-if __name__ == '__main__': 
+#if __name__ == '__main__': 
     
     # created the object gfg 
-    gfg = GFG3() 
+    #gfg = GFG3() 
     
     # calling the function sub_GFG3() from class GHG3 
     # which inherits both GFG1 and GFG2 classes 
-    gfg.sub_GFG(10)
+    #gfg.sub_GFG(10)
+    
+# =================================================
+
+# Calling a child method in a parent class in Python
+
+class Parent:
+    def makeChildrenStopCry(self):
+        if self.cry():
+            self.doWhateverToStopCry()
+
+class Children(Parent):
+    crying = False
+    def makeCry(self):
+        self.crying = True
+    def doWhateverToStopCry(self):
+        self.crying = False
+    def cry(self):
+        return self.crying
+
+child = Children()
+child.makeCry()
+print(child.crying)
+
+child.makeChildrenStopCry()
+print(child.crying)
+
