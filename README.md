@@ -21,6 +21,6 @@ Documentation: https://docs.python.org/3/index.html
 3. <a href="https://www.geeksforgeeks.org/python-tuples/" target="_blank">Tuples</a><br />
 4. <a href="https://www.geeksforgeeks.org/python-set-methods/">Set</a><br />
 
-
-
 ###  <a href="https://www.geeksforgeeks.org/abstract-data-types/" target="_blank">Abstract Data Types</a><br />
+###  <a href="https://realpython.com/python3-object-oriented-programming/">OOP</a><br />
+###  <a href="https://www.geeksforgeeks.org/introduction-to-apis/#:~:text=API%20is%20an%20abbreviation%20for,its%20program%20easier%20and%20simpler.">API</a><br />
