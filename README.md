@@ -24,3 +24,4 @@ Documentation: https://docs.python.org/3/index.html
 ###  <a href="https://www.geeksforgeeks.org/abstract-data-types/" target="_blank">Abstract Data Types</a><br />
 ###  <a href="https://realpython.com/python3-object-oriented-programming/">OOP</a><br />
 ###  <a href="https://www.geeksforgeeks.org/introduction-to-apis/#:~:text=API%20is%20an%20abbreviation%20for,its%20program%20easier%20and%20simpler.">API</a><br />
+###  <a href="https://www.digitalocean.com/community/tutorials/python-str-repr-functions">Python __str__() and __repr__() functions</a><br />
