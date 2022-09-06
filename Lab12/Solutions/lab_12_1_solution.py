@@ -1,5 +1,4 @@
-from fractions import gcd
-from math import atan2, sin, cos
+from math import atan2, sin, cos, gcd
 
 ####################
 # Rational numbers #
@@ -159,7 +158,7 @@ apply.implementations[('add',('com', 'com'))] = add_complex
 apply.implementations[('add',('rat', 'rat'))] = add_rational
 apply.implementations[('add',('com', 'rat'))] = add_complex_and_rational
 apply.implementations[('add',('rat', 'com'))] = add_rational_and_complex
-
+print(apply.implementations)
 
 #--------------driver--------------------driver-----------------driver------------------------
 
